@@ -1,11 +1,9 @@
 $(document).ready(() => {
-  console.log("I am ready");
   const menuBtn = $(".menu-btn");
   const menu = $(".menu");
   const menuNav = $(".menu-nav");
   const menuBranding = $(".menu-branding");
   const navItems = $(".nav-item");
-  console.log(navItems);
 
   const homeNav = $(".item-home");
   const aboutNav = $(".item-about");

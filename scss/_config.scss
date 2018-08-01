@@ -29,3 +29,41 @@ $background-opacity: 0.9;
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
+
+//Media Query Mixin form small Devices
+@mixin mediaSm {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+//768px and under
+@mixin mediaMd {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+//Over 768px
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+//Extra Large Screens
+@mixin mediaXL {
+  @media (min-width: 1171px) {
+    @content;
+  }
+}
+
+//Set text color based on Background
+
+@function setTextColor($color) {
+  @if (lightness($color) >40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
