@@ -94,7 +94,7 @@
 body {
   background: #444;
   color: #fff;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0;
   height: 100%;
   line-height: 1.5; }
@@ -290,7 +290,9 @@ main {
 @media (max-width: 500px) {
   main#home {
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding: 55px;
+    margin-left: -15px; }
     main#home h1 {
       margin-top: 10vh;
       font-size: 25px; }
