@@ -1,0 +1,31 @@
+$main-color: #444;
+$secondary-color: #eece1a;
+$show-home-image: true;
+$home-image: url(../img/pexels-photo-114907.jpeg);
+$background-opacity: 0.9;
+
+@mixin background {
+  @if $show-home-image {
+    &#bg-img {
+      background: $home-image;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($main-color, $background-opacity);
+      }
+    }
+  }
+}
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
