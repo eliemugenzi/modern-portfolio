@@ -64,13 +64,37 @@
     margin-left: -15px;
     h1 {
       margin-top: 10vh;
-      font-size: 25px;
     }
 
+    .lg-heading {
+      font-size: 28px;
+    }
     .sm-heading {
-      font-weight: 100;
-      transform: translateX(-15px);
+      font-size: 20px;
     }
   }
-  grid-template-columns: 1fr;
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  main#contact {
+    padding-right: 10vw;
+    .lg-heading,
+    .sm-heading {
+      display: inline-block;
+      margin: auto 10%;
+    }
+    .lg-heading {
+      font-size: 28px;
+    }
+    .sm-heading {
+      font-size: 20px;
+    }
+  }
+
+  .boxes {
+    .contact {
+      font-size: 22px;
+    }
+  }
 }
