@@ -133,6 +133,26 @@ main {
   }
 }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  align-items: center;
+
+  .contact {
+    font-size: 2rem;
+    border: 3px solid #fff;
+    border-radius: 7px;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+    &:hover {
+      border: 3px solid $secondary-color;
+    }
+  }
+}
+
 .btn {
   display: inline-block;
   padding: 0.5rem 1rem;

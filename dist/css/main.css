@@ -214,6 +214,22 @@ main {
       border: 3px solid #eece1a;
       opacity: 0.5; }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  align-items: center; }
+  .boxes .contact {
+    font-size: 2rem;
+    border: 3px solid #fff;
+    border-radius: 7px;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes .contact:hover {
+      border: 3px solid #eece1a; }
+
 .btn, .btn-dark, .btn-light {
   display: inline-block;
   padding: 0.5rem 1rem;
