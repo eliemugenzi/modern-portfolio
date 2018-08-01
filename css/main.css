@@ -294,9 +294,22 @@ main {
     padding: 55px;
     margin-left: -15px; }
     main#home h1 {
-      margin-top: 10vh;
-      font-size: 25px; }
+      margin-top: 10vh; }
+    main#home .lg-heading {
+      font-size: 28px; }
     main#home .sm-heading {
-      font-weight: 100;
-      transform: translateX(-15px); }
-  grid-template-columns: 1fr; }
+      font-size: 20px; }
+  .projects {
+    grid-template-columns: 1fr; }
+  main#contact {
+    padding-right: 10vw; }
+    main#contact .lg-heading,
+    main#contact .sm-heading {
+      display: inline-block;
+      margin: auto 10%; }
+    main#contact .lg-heading {
+      font-size: 28px; }
+    main#contact .sm-heading {
+      font-size: 20px; }
+  .boxes .contact {
+    font-size: 22px; } }
