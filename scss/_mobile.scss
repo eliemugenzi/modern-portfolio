@@ -1,9 +1,15 @@
 //Wide Screens
 @include mediaXL {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 //Desktops and laptops
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 //Tablets and small Laptops
@@ -43,6 +49,10 @@
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 //Smartphones
@@ -59,4 +69,5 @@
       transform: translateX(-15px);
     }
   }
+  grid-template-columns: 1fr;
 }

@@ -117,4 +117,43 @@ main {
   color: setTextColor($main-color);
 }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  img {
+    width: 100%;
+    height: 200px;
+    border: 3px solid #fff;
+    @include easeOut;
+    &:hover {
+      border: 3px solid $secondary-color;
+      opacity: 0.5;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  @include easeOut;
+  &:hover {
+    background: $secondary-color;
+    color: setTextColor($secondary-color);
+  }
+}
+.btn-dark {
+  @extend .btn;
+  background: darken($main-color, 50);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($main-color, 50);
+  color: #333;
+}
+
 @import "mobile";
