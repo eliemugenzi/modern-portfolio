@@ -106,9 +106,9 @@
       display: inline-block;
       position: relative;
       width: 100%;
+      border: none;
       &:first-child {
         p {
-          transform: translateX(-40px);
           font-size: 1.2rem;
         }
       }

@@ -160,6 +160,12 @@ main {
     &:hover {
       border: 3px solid $secondary-color;
     }
+    &:first-child {
+      p {
+        float: right;
+        margin-left: 15px;
+      }
+    }
   }
 }
 
