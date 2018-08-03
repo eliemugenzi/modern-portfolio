@@ -49,19 +49,29 @@ main {
   min-height: calc(100vh-60px);
   .icons {
     margin-top: 1rem;
-
-    a {
-      padding: 0.4rem;
-      border: 3px solid #fff;
-      margin-right: 1rem;
-      border-radius: 5px;
-      @include easeOut();
+    display: flex;
+    .icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      display: flex;
+      margin-right: 1.3rem;
+      @include easeOut;
       &:hover {
-        color: $secondary-color;
-        border: 3px solid $secondary-color;
+        background: #fff;
       }
-      i.fa {
-        font-size: 20px;
+      a {
+        padding: 1rem;
+        transform: translate(-4px, -4px);
+        position: relative;
+        @include easeOut();
+        &:hover {
+          color: $secondary-color;
+        }
+        i.fa {
+          font-size: 28px;
+        }
       }
     }
   }

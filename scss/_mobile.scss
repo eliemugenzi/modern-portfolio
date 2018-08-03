@@ -66,15 +66,21 @@
       margin-top: 10vh;
     }
 
-    .lg-heading {
-      font-size: 28px;
-    }
-    .sm-heading {
-      font-size: 20px;
+    span {
+      display: inline-block;
     }
   }
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  main {
+    .lg-heading {
+      font-size: 35px;
+    }
+    .sm-heading {
+      font-size: 20px;
+    }
   }
 
   main#contact {
@@ -85,7 +91,7 @@
       margin: auto 10%;
     }
     .lg-heading {
-      font-size: 28px;
+      font-size: 35px;
     }
     .sm-heading {
       font-size: 20px;
@@ -93,8 +99,19 @@
   }
 
   .boxes {
+    display: block;
     .contact {
       font-size: 22px;
+      //padding: 0.8rem 1.6rem;
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      &:first-child {
+        p {
+          transform: translateX(-40px);
+          font-size: 1.2rem;
+        }
+      }
     }
   }
 }

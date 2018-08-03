@@ -59,6 +59,7 @@
       background: url(../img/elie.JPG);
       border-radius: 50%;
       border: 3px solid #eece1a;
+      background-size: cover;
       background-repeat: no-repeat; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -145,18 +146,27 @@ main {
   padding: 4rem;
   min-height: calc(100vh-60px); }
   main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem;
-      border: 3px solid #fff;
-      margin-right: 1rem;
-      border-radius: 5px;
+    margin-top: 1rem;
+    display: flex; }
+    main .icons .icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      display: flex;
+      margin-right: 1.3rem;
       transition: all 0.5s ease-out; }
-      main .icons a:hover {
-        color: #eece1a;
-        border: 3px solid #eece1a; }
-      main .icons a i.fa {
-        font-size: 20px; }
+      main .icons .icon:hover {
+        background: #fff; }
+      main .icons .icon a {
+        padding: 1rem;
+        transform: translate(-4px, -4px);
+        position: relative;
+        transition: all 0.5s ease-out; }
+        main .icons .icon a:hover {
+          color: #eece1a; }
+        main .icons .icon a i.fa {
+          font-size: 28px; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -295,12 +305,14 @@ main {
     margin-left: -15px; }
     main#home h1 {
       margin-top: 10vh; }
-    main#home .lg-heading {
-      font-size: 28px; }
-    main#home .sm-heading {
-      font-size: 20px; }
+    main#home span {
+      display: inline-block; }
   .projects {
     grid-template-columns: 1fr; }
+  main .lg-heading {
+    font-size: 35px; }
+  main .sm-heading {
+    font-size: 20px; }
   main#contact {
     padding-right: 10vw; }
     main#contact .lg-heading,
@@ -308,8 +320,16 @@ main {
       display: inline-block;
       margin: auto 10%; }
     main#contact .lg-heading {
-      font-size: 28px; }
+      font-size: 35px; }
     main#contact .sm-heading {
       font-size: 20px; }
-  .boxes .contact {
-    font-size: 22px; } }
+  .boxes {
+    display: block; }
+    .boxes .contact {
+      font-size: 22px;
+      display: inline-block;
+      position: relative;
+      width: 100%; }
+      .boxes .contact:first-child p {
+        transform: translateX(-40px);
+        font-size: 1.2rem; } }
